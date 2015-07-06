@@ -1,0 +1,6 @@
+framework module SeekcyBeaconSDK {
+  umbrella header "SeekcyBeaconSDK.h"
+
+  export *
+  module * { export * }
+}
