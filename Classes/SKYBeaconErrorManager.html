@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 
-	<title>SKYBeaconManagerError Class Reference</title>
+	<title>SKYBeaconErrorManager Class Reference</title>
 
 	<link rel="stylesheet" href="../css/style.css">
 	<meta name="viewport" content="initial-scale=1, maximum-scale=1.4">
@@ -54,21 +54,15 @@
 
 	
 	
-	<optgroup label="Properties">
+
+	
+	<optgroup label="Class Methods">
 		
-		<option value="//api/name/errorType">errorType</option>
+		<option value="//api/name/skyBeaconErrorWithErrorCode:errorString:">+ skyBeaconErrorWithErrorCode:errorString:</option>
 		
 	</optgroup>
 	
 
-	
-
-	
-	<optgroup label="Instance Methods">
-		
-		<option value="//api/name/initWithErrorType:">- initWithErrorType:</option>
-		
-	</optgroup>
 	
 	
 </select>
@@ -83,7 +77,7 @@
 		<div id="overview_contents" class="container">
 			<div id="content">
 				<main role="main">
-					<h1 class="title">SKYBeaconManagerError Class Reference</h1>
+					<h1 class="title">SKYBeaconErrorManager Class Reference</h1>
 
 					
 					<div class="section section-specification"><table cellspacing="0"><tbody>
@@ -92,7 +86,7 @@
 	<td>NSObject</td>
 </tr><tr>
 	<th>Declared in</th>
-	<td>SKYBeaconManagerError.h</td>
+	<td>SKYBeaconErrorManager.h</td>
 </tr>
 						</tbody></table></div>
 					
@@ -118,8 +112,8 @@
 
 						<div class="task-list">
 							<div class="section-method">
-	<a name="//api/name/errorType" title="errorType"></a>
-	<h3 class="method-title"><code><a href="#//api/name/errorType">&nbsp;&nbsp;errorType</a></code>
+	<a name="//api/name/skyBeaconErrorWithErrorCode:errorString:" title="skyBeaconErrorWithErrorCode:errorString:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/skyBeaconErrorWithErrorCode:errorString:">+&nbsp;skyBeaconErrorWithErrorCode:errorString:</a></code>
 </h3>
 
 	<div class="method-info">
@@ -129,58 +123,12 @@
 			
 			
 			<div class="method-subsection brief-description">
-				<p>@property errorType</p>
+				<p>@method skyBeaconErrorWithErrorCode:errorString</p>
 			</div>
 			
 		    
 
-			<div class="method-subsection method-declaration"><code>@property (nonatomic) enum SKYBeaconManagerScanError errorType</code></div>
-
-		    
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection discussion-section">
-				<h4 class="method-subtitle">Discussion</h4>
-				<p>@property errorType</p><p>错误类型</p>
-			</div>
-			
-
-			
-
-			
-
-			
-			<div class="method-subsection declared-in-section">
-				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYBeaconManagerError.h</code></p>
-			</div>
-			
-			
-		</div>
-	</div>
-</div><div class="section-method">
-	<a name="//api/name/initWithErrorType:" title="initWithErrorType:"></a>
-	<h3 class="method-title"><code><a href="#//api/name/initWithErrorType:">&ndash;&nbsp;initWithErrorType:</a></code>
-</h3>
-
-	<div class="method-info">
-		<div class="pointy-thing"></div>
-
-		<div class="method-info-container">
-			
-			
-			<div class="method-subsection brief-description">
-				<p>@method initWithErrorType:</p>
-			</div>
-			
-		    
-
-			<div class="method-subsection method-declaration"><code>- (instancetype)initWithErrorType:(enum SKYBeaconManagerScanError)<em>type</em></code></div>
+			<div class="method-subsection method-declaration"><code>+ (NSError *)skyBeaconErrorWithErrorCode:(int)<em>errorCode</em> errorString:(NSString *)<em>errorString</em></code></div>
 
 		    
 			
@@ -189,8 +137,13 @@
 				<table class="argument-def parameter-def">
 				
 					<tr>
-						<th scope="row" class="argument-name"><code>type</code></th>
-						<td><p>类型，参考 SKYBeaconManagerScanError 枚举</p></td>
+						<th scope="row" class="argument-name"><code>errorCode</code></th>
+						<td><p>错误码</p></td>
+					</tr>
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>errorString</code></th>
+						<td><p>错误信息</p></td>
 					</tr>
 				
 				</table>
@@ -198,13 +151,18 @@
 			
 
 			
+			<div class="method-subsection return">
+				<h4 class="method-subtitle parameter-title">Return Value</h4>
+				<p>NSError对象</p>
+			</div>
+			
 
 			
 
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>@method initWithErrorType:</p><p>初始化</p>
+				<p>@method skyBeaconErrorWithErrorCode:errorString</p><p>根据错误码和错误信息，返回一个NSError对象</p>
 			</div>
 			
 
@@ -215,7 +173,7 @@
 			
 			<div class="method-subsection declared-in-section">
 				<h4 class="method-subtitle">Declared In</h4>
-				<p><code class="declared-in-ref">SKYBeaconManagerError.h</code></p>
+				<p><code class="declared-in-ref">SKYBeaconErrorManager.h</code></p>
 			</div>
 			
 			
@@ -236,7 +194,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Seekcy. All rights reserved. Updated: 2015-07-06</p>
+						<p class="copyright">Copyright &copy; 2015 Seekcy. All rights reserved. Updated: 2015-07-13</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>
