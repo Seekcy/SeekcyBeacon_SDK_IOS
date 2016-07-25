@@ -64,6 +64,8 @@
 		
 		<option value="//api/name/beaconModel">beaconModel</option>
 		
+		<option value="//api/name/cellUseOfToWrite">cellUseOfToWrite</option>
+		
 		<option value="//api/name/configState">configState</option>
 		
 		<option value="//api/name/deviceName">deviceName</option>
@@ -76,6 +78,8 @@
 		
 		<option value="//api/name/isLockedToWrite">isLockedToWrite</option>
 		
+		<option value="//api/name/lightSensationToWrite">lightSensationToWrite</option>
+		
 		<option value="//api/name/lockedKeyToWrite">lockedKeyToWrite</option>
 		
 		<option value="//api/name/resetConfigKeyToWrite">resetConfigKeyToWrite</option>
@@ -87,6 +91,8 @@
 
 	
 	<optgroup label="Instance Methods">
+		
+		<option value="//api/name/configWithBeacon:">- configWithBeacon:</option>
 		
 		<option value="//api/name/initWithBeacon:">- initWithBeacon:</option>
 		
@@ -582,7 +588,7 @@
 			
 			<div class="method-subsection discussion-section">
 				<h4 class="method-subtitle">Discussion</h4>
-				<p>@property lockedKeyToWrite</p><p>开启防窜改模式时设置的key值,开启防窜改后，所有写入动作都会使用这个key，否则使用寻息提供的默认key。 (初始化的时候默认为@&ldquo;&rdquo;)</p>
+				<p>@property lockedKeyToWrite</p><p>开启防篡改模式时设置的key值,开启防篡改后，所有写入动作都会使用这个key，否则使用寻息提供的默认key。 (初始化的时候默认为@&ldquo;&rdquo;)</p>
 			</div>
 			
 
@@ -692,6 +698,108 @@
 		</div>
 	</div>
 </div><div class="section-method">
+	<a name="//api/name/cellUseOfToWrite" title="cellUseOfToWrite"></a>
+	<h3 class="method-title"><code><a href="#//api/name/cellUseOfToWrite">&nbsp;&nbsp;cellUseOfToWrite</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@property cellUseOf</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) NSMutableArray *cellUseOfToWrite</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property cellUseOf</p><p>格子使用情况，count = 10
+index: 0 表示使用了多少个格子（即有几个id广播）
+1 广播ID1
+2 广播ID2
+3 广播ID3
+4 广播ID4
+5 广播ID5
+6 广播ID6
+7 广播ID7
+8 广播ID8
+9 广播ID9</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYBeaconConfigMutipleID.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
+	<a name="//api/name/lightSensationToWrite" title="lightSensationToWrite"></a>
+	<h3 class="method-title"><code><a href="#//api/name/lightSensationToWrite">&nbsp;&nbsp;lightSensationToWrite</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@property lightSensation</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>@property (nonatomic, strong) SKYLightSensation *lightSensationToWrite</code></div>
+
+		    
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@property lightSensation</p><p>光感信息，SKYLightSensation对象</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYBeaconConfigMutipleID.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
+</div><div class="section-method">
 	<a name="//api/name/initWithBeacon:" title="initWithBeacon:"></a>
 	<h3 class="method-title"><code><a href="#//api/name/initWithBeacon:">&ndash;&nbsp;initWithBeacon:</a></code>
 </h3>
@@ -749,6 +857,64 @@
 			
 		</div>
 	</div>
+</div><div class="section-method">
+	<a name="//api/name/configWithBeacon:" title="configWithBeacon:"></a>
+	<h3 class="method-title"><code><a href="#//api/name/configWithBeacon:">&ndash;&nbsp;configWithBeacon:</a></code>
+</h3>
+
+	<div class="method-info">
+		<div class="pointy-thing"></div>
+
+		<div class="method-info-container">
+			
+			
+			<div class="method-subsection brief-description">
+				<p>@method configWithBeacon:</p>
+			</div>
+			
+		    
+
+			<div class="method-subsection method-declaration"><code>- (void)configWithBeacon:(SKYBeaconMutipleID *)<em>beacon</em></code></div>
+
+		    
+			
+			<div class="method-subsection arguments-section parameters">
+				<h4 class="method-subtitle parameter-title">Parameters</h4>
+				<table class="argument-def parameter-def">
+				
+					<tr>
+						<th scope="row" class="argument-name"><code>beacon</code></th>
+						<td><p>SKYBeacon对象</p></td>
+					</tr>
+				
+				</table>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection discussion-section">
+				<h4 class="method-subtitle">Discussion</h4>
+				<p>@method configWithBeacon:</p><p>根据传入的SKYBeacon对象进行赋值</p>
+			</div>
+			
+
+			
+
+			
+
+			
+			<div class="method-subsection declared-in-section">
+				<h4 class="method-subtitle">Declared In</h4>
+				<p><code class="declared-in-ref">SKYBeaconConfigMutipleID.h</code></p>
+			</div>
+			
+			
+		</div>
+	</div>
 </div>
 						</div>
 						
@@ -764,7 +930,7 @@
 				<footer>
 					<div class="footer-copyright">
 						
-						<p class="copyright">Copyright &copy; 2015 Seekcy. All rights reserved. Updated: 2015-07-06</p>
+						<p class="copyright">Copyright &copy; 2015 Seekcy. All rights reserved. Updated: 2015-10-08</p>
 						
 						
 						<p class="generator">Generated by <a href="http://appledoc.gentlebytes.com">appledoc 2.2.1 (build 1333)</a>.</p>

@@ -1,0 +1,18 @@
+//
+//  PrefixHeader.pch
+//  SDKDemo
+//
+//  Created by seekcy on 15/10/8.
+//  Copyright (c) 2015年 com.seekcy. All rights reserved.
+//
+
+#ifndef SDKDemo_PrefixHeader_pch
+#define SDKDemo_PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+
+#define kMainNavColor [UIColor colorWithRed:44/255.0f green:183/255.0f blue:230/255.0f alpha:1.0f]
+
+#endif

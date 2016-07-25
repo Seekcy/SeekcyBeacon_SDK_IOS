@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PEn-fQ-sZH">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uDZ-yh-ZHT">
+                                <rect key="frame" x="30" y="83" width="550" height="30"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.71764705880000002" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="c4F-gA-bCN"/>
+                                </constraints>
+                                <state key="normal" title="扫描寻息beacon">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="scanSKYBeacon:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="4D8-wl-be0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZqK-yR-1Zu">
+                                <rect key="frame" x="30" y="170" width="550" height="30"/>
+                                <color key="backgroundColor" red="0.17254901959999999" green="0.71764705880000002" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="3Sa-02-fMk"/>
+                                    <constraint firstAttribute="height" constant="40" id="xjQ-VA-w33"/>
+                                </constraints>
+                                <state key="normal" title="推送">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3Sa-02-fMk"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="pushSKYBeacon:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="twO-Bs-p0A"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZqK-yR-1Zu" firstAttribute="top" secondItem="uDZ-yh-ZHT" secondAttribute="bottom" constant="57" id="IeF-db-WHh"/>
+                            <constraint firstItem="ZqK-yR-1Zu" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="Xac-y8-0VY"/>
+                            <constraint firstItem="uDZ-yh-ZHT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="10" id="bsw-C7-D4Q"/>
+                            <constraint firstItem="ZqK-yR-1Zu" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="irt-Hf-Tbe"/>
+                            <constraint firstItem="uDZ-yh-ZHT" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="19" id="mJT-ha-48v"/>
+                            <constraint firstItem="uDZ-yh-ZHT" firstAttribute="trailing" secondItem="kh9-bI-dsS" secondAttribute="trailingMargin" id="qKW-jd-kc8"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="4SS-Nv-A0H"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1313" y="377"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ty9-uj-CnY">
+            <objects>
+                <navigationController id="PEn-fQ-sZH" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="qaP-EQ-MiQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="rtr-5D-aad"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZnC-df-Oeh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="587" y="377"/>
+        </scene>
+    </scenes>
+</document>

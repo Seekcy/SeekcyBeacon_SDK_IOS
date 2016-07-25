@@ -1,0 +1,676 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9720586E1BDDD63A00394C34 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9720586D1BDDD63A00394C34 /* CoreBluetooth.framework */; };
+		972058701BDDD71800394C34 /* libxml2.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9720586F1BDDD71800394C34 /* libxml2.dylib */; };
+		972058721BDDD71F00394C34 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972058711BDDD71F00394C34 /* CoreMotion.framework */; };
+		972058741BDDD72600394C34 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 972058731BDDD72600394C34 /* libz.dylib */; };
+		972058761BDDD72D00394C34 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 972058751BDDD72D00394C34 /* libc++.dylib */; };
+		972058781BDDD73300394C34 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972058771BDDD73300394C34 /* CoreLocation.framework */; };
+		9720587A1BDDD73900394C34 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972058791BDDD73900394C34 /* Accelerate.framework */; };
+		9720587C1BDDD74000394C34 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9720587B1BDDD74000394C34 /* CoreGraphics.framework */; };
+		9720587E1BDDD74500394C34 /* CoreText.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9720587D1BDDD74500394C34 /* CoreText.framework */; };
+		972058801BDDD74C00394C34 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9720587F1BDDD74C00394C34 /* ImageIO.framework */; };
+		972058821BDDD75200394C34 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972058811BDDD75200394C34 /* MapKit.framework */; };
+		972058841BDDD75900394C34 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972058831BDDD75900394C34 /* QuartzCore.framework */; };
+		972058861BDDD76100394C34 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 972058851BDDD76100394C34 /* libsqlite3.dylib */; };
+		972058881BDDD76600394C34 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 972058871BDDD76600394C34 /* AVFoundation.framework */; };
+		9726A85F1CB60DCC00BF7127 /* PushListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9726A85E1CB60DCC00BF7127 /* PushListViewController.m */; };
+		97A44D211BBBDE4500303752 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A44D201BBBDE4500303752 /* main.m */; };
+		97A44D241BBBDE4500303752 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A44D231BBBDE4500303752 /* AppDelegate.m */; };
+		97A44D271BBBDE4500303752 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A44D261BBBDE4500303752 /* ViewController.m */; };
+		97A44D2A1BBBDE4500303752 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 97A44D281BBBDE4500303752 /* Main.storyboard */; };
+		97A44D2C1BBBDE4500303752 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 97A44D2B1BBBDE4500303752 /* Images.xcassets */; };
+		97A44D2F1BBBDE4500303752 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 97A44D2D1BBBDE4500303752 /* LaunchScreen.xib */; };
+		97A44D3B1BBBDE4500303752 /* SDKDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 97A44D3A1BBBDE4500303752 /* SDKDemoTests.m */; };
+		97C55B8C1BC6068F00A0111C /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 97C55B841BC6068F00A0111C /* LICENSE.txt */; };
+		97C55B8D1BC6068F00A0111C /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 97C55B851BC6068F00A0111C /* README.md */; };
+		97C55B8E1BC6068F00A0111C /* SVIndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C55B881BC6068F00A0111C /* SVIndefiniteAnimatedView.m */; };
+		97C55B8F1BC6068F00A0111C /* SVProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 97C55B891BC6068F00A0111C /* SVProgressHUD.bundle */; };
+		97C55B901BC6068F00A0111C /* SVProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C55B8B1BC6068F00A0111C /* SVProgressHUD.m */; };
+		97C55BA61BC610CE00A0111C /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = 97C55BA51BC610CE00A0111C /* MMMaterialDesignSpinner.m */; };
+		97D089731D45C332001AF53A /* SeekcyBeaconSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97D089721D45C332001AF53A /* SeekcyBeaconSDK.framework */; };
+		97D79ABD1BCDEE6D0099EC06 /* CellUseOfChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AA11BCDEE6D0099EC06 /* CellUseOfChooseViewController.m */; };
+		97D79ABE1BCDEE6D0099EC06 /* CellUseOfViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AA31BCDEE6D0099EC06 /* CellUseOfViewController.m */; };
+		97D79ABF1BCDEE6D0099EC06 /* DarkBroadcastFrequencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AA51BCDEE6D0099EC06 /* DarkBroadcastFrequencyViewController.m */; };
+		97D79AC01BCDEE6D0099EC06 /* DarkThresholdChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AA71BCDEE6D0099EC06 /* DarkThresholdChooseViewController.m */; };
+		97D79AC11BCDEE6D0099EC06 /* IntervalChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AA91BCDEE6D0099EC06 /* IntervalChooseViewController.m */; };
+		97D79AC21BCDEE6D0099EC06 /* MutipleIDBeaconConfiglViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AAB1BCDEE6D0099EC06 /* MutipleIDBeaconConfiglViewController.m */; };
+		97D79AC31BCDEE6D0099EC06 /* ScanSKYBeaconViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AAD1BCDEE6D0099EC06 /* ScanSKYBeaconViewController.m */; };
+		97D79AC41BCDEE6D0099EC06 /* SICBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AAF1BCDEE6D0099EC06 /* SICBaseViewController.m */; };
+		97D79AC51BCDEE6D0099EC06 /* SICiBeaconConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AB11BCDEE6D0099EC06 /* SICiBeaconConfigViewController.m */; };
+		97D79AC61BCDEE6D0099EC06 /* SICUUIDChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AB31BCDEE6D0099EC06 /* SICUUIDChooseViewController.m */; };
+		97D79AC71BCDEE6D0099EC06 /* TemperatureUpdateFrequencyChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AB51BCDEE6D0099EC06 /* TemperatureUpdateFrequencyChooseViewController.m */; };
+		97D79AC81BCDEE6D0099EC06 /* TextEnterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AB71BCDEE6D0099EC06 /* TextEnterViewController.m */; };
+		97D79AC91BCDEE6D0099EC06 /* TxPowerChooseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79AB91BCDEE6D0099EC06 /* TxPowerChooseViewController.m */; };
+		97D79ACA1BCDEE6D0099EC06 /* UpdateFrequencyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 97D79ABB1BCDEE6D0099EC06 /* UpdateFrequencyViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		97A44D351BBBDE4500303752 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 97A44D131BBBDE4500303752 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 97A44D1A1BBBDE4500303752;
+			remoteInfo = SDKDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9720586D1BDDD63A00394C34 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		9720586F1BDDD71800394C34 /* libxml2.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libxml2.dylib; path = usr/lib/libxml2.dylib; sourceTree = SDKROOT; };
+		972058711BDDD71F00394C34 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		972058731BDDD72600394C34 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		972058751BDDD72D00394C34 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
+		972058771BDDD73300394C34 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		972058791BDDD73900394C34 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		9720587B1BDDD74000394C34 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		9720587D1BDDD74500394C34 /* CoreText.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreText.framework; path = System/Library/Frameworks/CoreText.framework; sourceTree = SDKROOT; };
+		9720587F1BDDD74C00394C34 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		972058811BDDD75200394C34 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		972058831BDDD75900394C34 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		972058851BDDD76100394C34 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		972058871BDDD76600394C34 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		9726A85D1CB60DCC00BF7127 /* PushListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PushListViewController.h; sourceTree = "<group>"; };
+		9726A85E1CB60DCC00BF7127 /* PushListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PushListViewController.m; sourceTree = "<group>"; };
+		97A44D1B1BBBDE4500303752 /* SDKDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDKDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A44D1F1BBBDE4500303752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A44D201BBBDE4500303752 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		97A44D221BBBDE4500303752 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		97A44D231BBBDE4500303752 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		97A44D251BBBDE4500303752 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		97A44D261BBBDE4500303752 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		97A44D291BBBDE4500303752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		97A44D2B1BBBDE4500303752 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		97A44D2E1BBBDE4500303752 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		97A44D341BBBDE4500303752 /* SDKDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDKDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		97A44D391BBBDE4500303752 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		97A44D3A1BBBDE4500303752 /* SDKDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDKDemoTests.m; sourceTree = "<group>"; };
+		97C55B841BC6068F00A0111C /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		97C55B851BC6068F00A0111C /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		97C55B871BC6068F00A0111C /* SVIndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVIndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		97C55B881BC6068F00A0111C /* SVIndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVIndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		97C55B891BC6068F00A0111C /* SVProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = SVProgressHUD.bundle; sourceTree = "<group>"; };
+		97C55B8A1BC6068F00A0111C /* SVProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SVProgressHUD.h; sourceTree = "<group>"; };
+		97C55B8B1BC6068F00A0111C /* SVProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SVProgressHUD.m; sourceTree = "<group>"; };
+		97C55BA41BC610CE00A0111C /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		97C55BA51BC610CE00A0111C /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
+		97C55BB61BC6119D00A0111C /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = SDKDemo/PrefixHeader.pch; sourceTree = "<group>"; };
+		97D089721D45C332001AF53A /* SeekcyBeaconSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SeekcyBeaconSDK.framework; sourceTree = "<group>"; };
+		97D79AA01BCDEE6D0099EC06 /* CellUseOfChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellUseOfChooseViewController.h; sourceTree = "<group>"; };
+		97D79AA11BCDEE6D0099EC06 /* CellUseOfChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellUseOfChooseViewController.m; sourceTree = "<group>"; };
+		97D79AA21BCDEE6D0099EC06 /* CellUseOfViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellUseOfViewController.h; sourceTree = "<group>"; };
+		97D79AA31BCDEE6D0099EC06 /* CellUseOfViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellUseOfViewController.m; sourceTree = "<group>"; };
+		97D79AA41BCDEE6D0099EC06 /* DarkBroadcastFrequencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkBroadcastFrequencyViewController.h; sourceTree = "<group>"; };
+		97D79AA51BCDEE6D0099EC06 /* DarkBroadcastFrequencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkBroadcastFrequencyViewController.m; sourceTree = "<group>"; };
+		97D79AA61BCDEE6D0099EC06 /* DarkThresholdChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DarkThresholdChooseViewController.h; sourceTree = "<group>"; };
+		97D79AA71BCDEE6D0099EC06 /* DarkThresholdChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DarkThresholdChooseViewController.m; sourceTree = "<group>"; };
+		97D79AA81BCDEE6D0099EC06 /* IntervalChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntervalChooseViewController.h; sourceTree = "<group>"; };
+		97D79AA91BCDEE6D0099EC06 /* IntervalChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntervalChooseViewController.m; sourceTree = "<group>"; };
+		97D79AAA1BCDEE6D0099EC06 /* MutipleIDBeaconConfiglViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MutipleIDBeaconConfiglViewController.h; sourceTree = "<group>"; };
+		97D79AAB1BCDEE6D0099EC06 /* MutipleIDBeaconConfiglViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MutipleIDBeaconConfiglViewController.m; sourceTree = "<group>"; };
+		97D79AAC1BCDEE6D0099EC06 /* ScanSKYBeaconViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScanSKYBeaconViewController.h; sourceTree = "<group>"; };
+		97D79AAD1BCDEE6D0099EC06 /* ScanSKYBeaconViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScanSKYBeaconViewController.m; sourceTree = "<group>"; };
+		97D79AAE1BCDEE6D0099EC06 /* SICBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SICBaseViewController.h; sourceTree = "<group>"; };
+		97D79AAF1BCDEE6D0099EC06 /* SICBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SICBaseViewController.m; sourceTree = "<group>"; };
+		97D79AB01BCDEE6D0099EC06 /* SICiBeaconConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SICiBeaconConfigViewController.h; sourceTree = "<group>"; };
+		97D79AB11BCDEE6D0099EC06 /* SICiBeaconConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SICiBeaconConfigViewController.m; sourceTree = "<group>"; };
+		97D79AB21BCDEE6D0099EC06 /* SICUUIDChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SICUUIDChooseViewController.h; sourceTree = "<group>"; };
+		97D79AB31BCDEE6D0099EC06 /* SICUUIDChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SICUUIDChooseViewController.m; sourceTree = "<group>"; };
+		97D79AB41BCDEE6D0099EC06 /* TemperatureUpdateFrequencyChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TemperatureUpdateFrequencyChooseViewController.h; sourceTree = "<group>"; };
+		97D79AB51BCDEE6D0099EC06 /* TemperatureUpdateFrequencyChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TemperatureUpdateFrequencyChooseViewController.m; sourceTree = "<group>"; };
+		97D79AB61BCDEE6D0099EC06 /* TextEnterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextEnterViewController.h; sourceTree = "<group>"; };
+		97D79AB71BCDEE6D0099EC06 /* TextEnterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextEnterViewController.m; sourceTree = "<group>"; };
+		97D79AB81BCDEE6D0099EC06 /* TxPowerChooseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TxPowerChooseViewController.h; sourceTree = "<group>"; };
+		97D79AB91BCDEE6D0099EC06 /* TxPowerChooseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TxPowerChooseViewController.m; sourceTree = "<group>"; };
+		97D79ABA1BCDEE6D0099EC06 /* UpdateFrequencyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateFrequencyViewController.h; sourceTree = "<group>"; };
+		97D79ABB1BCDEE6D0099EC06 /* UpdateFrequencyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateFrequencyViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		97A44D181BBBDE4500303752 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				972058881BDDD76600394C34 /* AVFoundation.framework in Frameworks */,
+				972058861BDDD76100394C34 /* libsqlite3.dylib in Frameworks */,
+				972058841BDDD75900394C34 /* QuartzCore.framework in Frameworks */,
+				972058821BDDD75200394C34 /* MapKit.framework in Frameworks */,
+				972058801BDDD74C00394C34 /* ImageIO.framework in Frameworks */,
+				9720587E1BDDD74500394C34 /* CoreText.framework in Frameworks */,
+				9720587C1BDDD74000394C34 /* CoreGraphics.framework in Frameworks */,
+				9720587A1BDDD73900394C34 /* Accelerate.framework in Frameworks */,
+				972058781BDDD73300394C34 /* CoreLocation.framework in Frameworks */,
+				972058761BDDD72D00394C34 /* libc++.dylib in Frameworks */,
+				972058741BDDD72600394C34 /* libz.dylib in Frameworks */,
+				972058721BDDD71F00394C34 /* CoreMotion.framework in Frameworks */,
+				972058701BDDD71800394C34 /* libxml2.dylib in Frameworks */,
+				9720586E1BDDD63A00394C34 /* CoreBluetooth.framework in Frameworks */,
+				97D089731D45C332001AF53A /* SeekcyBeaconSDK.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A44D311BBBDE4500303752 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9726A85C1CB60D9B00BF7127 /* push */ = {
+			isa = PBXGroup;
+			children = (
+				9726A85D1CB60DCC00BF7127 /* PushListViewController.h */,
+				9726A85E1CB60DCC00BF7127 /* PushListViewController.m */,
+			);
+			path = push;
+			sourceTree = "<group>";
+		};
+		97A44D121BBBDE4500303752 = {
+			isa = PBXGroup;
+			children = (
+				97D089721D45C332001AF53A /* SeekcyBeaconSDK.framework */,
+				972058871BDDD76600394C34 /* AVFoundation.framework */,
+				972058851BDDD76100394C34 /* libsqlite3.dylib */,
+				972058831BDDD75900394C34 /* QuartzCore.framework */,
+				972058811BDDD75200394C34 /* MapKit.framework */,
+				9720587F1BDDD74C00394C34 /* ImageIO.framework */,
+				9720587D1BDDD74500394C34 /* CoreText.framework */,
+				9720587B1BDDD74000394C34 /* CoreGraphics.framework */,
+				972058791BDDD73900394C34 /* Accelerate.framework */,
+				972058771BDDD73300394C34 /* CoreLocation.framework */,
+				972058751BDDD72D00394C34 /* libc++.dylib */,
+				972058731BDDD72600394C34 /* libz.dylib */,
+				972058711BDDD71F00394C34 /* CoreMotion.framework */,
+				9720586F1BDDD71800394C34 /* libxml2.dylib */,
+				9720586D1BDDD63A00394C34 /* CoreBluetooth.framework */,
+				97C55BB61BC6119D00A0111C /* PrefixHeader.pch */,
+				97A44D1D1BBBDE4500303752 /* SDKDemo */,
+				97A44D371BBBDE4500303752 /* SDKDemoTests */,
+				97A44D1C1BBBDE4500303752 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		97A44D1C1BBBDE4500303752 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				97A44D1B1BBBDE4500303752 /* SDKDemo.app */,
+				97A44D341BBBDE4500303752 /* SDKDemoTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		97A44D1D1BBBDE4500303752 /* SDKDemo */ = {
+			isa = PBXGroup;
+			children = (
+				9726A85C1CB60D9B00BF7127 /* push */,
+				97D79A9F1BCDEE6D0099EC06 /* 配置 */,
+				97C55BA31BC610CE00A0111C /* MMMaterialDesignSpinner */,
+				97C55B831BC6068F00A0111C /* SVProgressHUD */,
+				97A44D221BBBDE4500303752 /* AppDelegate.h */,
+				97A44D231BBBDE4500303752 /* AppDelegate.m */,
+				97A44D251BBBDE4500303752 /* ViewController.h */,
+				97A44D261BBBDE4500303752 /* ViewController.m */,
+				97A44D281BBBDE4500303752 /* Main.storyboard */,
+				97A44D2B1BBBDE4500303752 /* Images.xcassets */,
+				97A44D2D1BBBDE4500303752 /* LaunchScreen.xib */,
+				97A44D1E1BBBDE4500303752 /* Supporting Files */,
+			);
+			path = SDKDemo;
+			sourceTree = "<group>";
+		};
+		97A44D1E1BBBDE4500303752 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97A44D1F1BBBDE4500303752 /* Info.plist */,
+				97A44D201BBBDE4500303752 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97A44D371BBBDE4500303752 /* SDKDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				97A44D3A1BBBDE4500303752 /* SDKDemoTests.m */,
+				97A44D381BBBDE4500303752 /* Supporting Files */,
+			);
+			path = SDKDemoTests;
+			sourceTree = "<group>";
+		};
+		97A44D381BBBDE4500303752 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				97A44D391BBBDE4500303752 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		97C55B831BC6068F00A0111C /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				97C55B841BC6068F00A0111C /* LICENSE.txt */,
+				97C55B851BC6068F00A0111C /* README.md */,
+				97C55B861BC6068F00A0111C /* SVProgressHUD */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		97C55B861BC6068F00A0111C /* SVProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				97C55B871BC6068F00A0111C /* SVIndefiniteAnimatedView.h */,
+				97C55B881BC6068F00A0111C /* SVIndefiniteAnimatedView.m */,
+				97C55B891BC6068F00A0111C /* SVProgressHUD.bundle */,
+				97C55B8A1BC6068F00A0111C /* SVProgressHUD.h */,
+				97C55B8B1BC6068F00A0111C /* SVProgressHUD.m */,
+			);
+			path = SVProgressHUD;
+			sourceTree = "<group>";
+		};
+		97C55BA31BC610CE00A0111C /* MMMaterialDesignSpinner */ = {
+			isa = PBXGroup;
+			children = (
+				97C55BA41BC610CE00A0111C /* MMMaterialDesignSpinner.h */,
+				97C55BA51BC610CE00A0111C /* MMMaterialDesignSpinner.m */,
+			);
+			path = MMMaterialDesignSpinner;
+			sourceTree = "<group>";
+		};
+		97D79A9F1BCDEE6D0099EC06 /* 配置 */ = {
+			isa = PBXGroup;
+			children = (
+				97D79AA01BCDEE6D0099EC06 /* CellUseOfChooseViewController.h */,
+				97D79AA11BCDEE6D0099EC06 /* CellUseOfChooseViewController.m */,
+				97D79AA21BCDEE6D0099EC06 /* CellUseOfViewController.h */,
+				97D79AA31BCDEE6D0099EC06 /* CellUseOfViewController.m */,
+				97D79AA41BCDEE6D0099EC06 /* DarkBroadcastFrequencyViewController.h */,
+				97D79AA51BCDEE6D0099EC06 /* DarkBroadcastFrequencyViewController.m */,
+				97D79AA61BCDEE6D0099EC06 /* DarkThresholdChooseViewController.h */,
+				97D79AA71BCDEE6D0099EC06 /* DarkThresholdChooseViewController.m */,
+				97D79AA81BCDEE6D0099EC06 /* IntervalChooseViewController.h */,
+				97D79AA91BCDEE6D0099EC06 /* IntervalChooseViewController.m */,
+				97D79AAA1BCDEE6D0099EC06 /* MutipleIDBeaconConfiglViewController.h */,
+				97D79AAB1BCDEE6D0099EC06 /* MutipleIDBeaconConfiglViewController.m */,
+				97D79AAC1BCDEE6D0099EC06 /* ScanSKYBeaconViewController.h */,
+				97D79AAD1BCDEE6D0099EC06 /* ScanSKYBeaconViewController.m */,
+				97D79AAE1BCDEE6D0099EC06 /* SICBaseViewController.h */,
+				97D79AAF1BCDEE6D0099EC06 /* SICBaseViewController.m */,
+				97D79AB01BCDEE6D0099EC06 /* SICiBeaconConfigViewController.h */,
+				97D79AB11BCDEE6D0099EC06 /* SICiBeaconConfigViewController.m */,
+				97D79AB21BCDEE6D0099EC06 /* SICUUIDChooseViewController.h */,
+				97D79AB31BCDEE6D0099EC06 /* SICUUIDChooseViewController.m */,
+				97D79AB41BCDEE6D0099EC06 /* TemperatureUpdateFrequencyChooseViewController.h */,
+				97D79AB51BCDEE6D0099EC06 /* TemperatureUpdateFrequencyChooseViewController.m */,
+				97D79AB61BCDEE6D0099EC06 /* TextEnterViewController.h */,
+				97D79AB71BCDEE6D0099EC06 /* TextEnterViewController.m */,
+				97D79AB81BCDEE6D0099EC06 /* TxPowerChooseViewController.h */,
+				97D79AB91BCDEE6D0099EC06 /* TxPowerChooseViewController.m */,
+				97D79ABA1BCDEE6D0099EC06 /* UpdateFrequencyViewController.h */,
+				97D79ABB1BCDEE6D0099EC06 /* UpdateFrequencyViewController.m */,
+			);
+			path = "配置";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		97A44D1A1BBBDE4500303752 /* SDKDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A44D3E1BBBDE4500303752 /* Build configuration list for PBXNativeTarget "SDKDemo" */;
+			buildPhases = (
+				97A44D171BBBDE4500303752 /* Sources */,
+				97A44D181BBBDE4500303752 /* Frameworks */,
+				97A44D191BBBDE4500303752 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDKDemo;
+			productName = SDKDemo;
+			productReference = 97A44D1B1BBBDE4500303752 /* SDKDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		97A44D331BBBDE4500303752 /* SDKDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 97A44D411BBBDE4500303752 /* Build configuration list for PBXNativeTarget "SDKDemoTests" */;
+			buildPhases = (
+				97A44D301BBBDE4500303752 /* Sources */,
+				97A44D311BBBDE4500303752 /* Frameworks */,
+				97A44D321BBBDE4500303752 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97A44D361BBBDE4500303752 /* PBXTargetDependency */,
+			);
+			name = SDKDemoTests;
+			productName = SDKDemoTests;
+			productReference = 97A44D341BBBDE4500303752 /* SDKDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		97A44D131BBBDE4500303752 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0640;
+				ORGANIZATIONNAME = com.seekcy;
+				TargetAttributes = {
+					97A44D1A1BBBDE4500303752 = {
+						CreatedOnToolsVersion = 6.4;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					97A44D331BBBDE4500303752 = {
+						CreatedOnToolsVersion = 6.4;
+						TestTargetID = 97A44D1A1BBBDE4500303752;
+					};
+				};
+			};
+			buildConfigurationList = 97A44D161BBBDE4500303752 /* Build configuration list for PBXProject "SDKDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 97A44D121BBBDE4500303752;
+			productRefGroup = 97A44D1C1BBBDE4500303752 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				97A44D1A1BBBDE4500303752 /* SDKDemo */,
+				97A44D331BBBDE4500303752 /* SDKDemoTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		97A44D191BBBDE4500303752 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97C55B8F1BC6068F00A0111C /* SVProgressHUD.bundle in Resources */,
+				97C55B8C1BC6068F00A0111C /* LICENSE.txt in Resources */,
+				97A44D2A1BBBDE4500303752 /* Main.storyboard in Resources */,
+				97A44D2F1BBBDE4500303752 /* LaunchScreen.xib in Resources */,
+				97A44D2C1BBBDE4500303752 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A44D321BBBDE4500303752 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		97A44D171BBBDE4500303752 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97D79AC01BCDEE6D0099EC06 /* DarkThresholdChooseViewController.m in Sources */,
+				97A44D271BBBDE4500303752 /* ViewController.m in Sources */,
+				97D79ABF1BCDEE6D0099EC06 /* DarkBroadcastFrequencyViewController.m in Sources */,
+				97A44D241BBBDE4500303752 /* AppDelegate.m in Sources */,
+				97D79AC21BCDEE6D0099EC06 /* MutipleIDBeaconConfiglViewController.m in Sources */,
+				97D79AC81BCDEE6D0099EC06 /* TextEnterViewController.m in Sources */,
+				97D79AC61BCDEE6D0099EC06 /* SICUUIDChooseViewController.m in Sources */,
+				97D79AC51BCDEE6D0099EC06 /* SICiBeaconConfigViewController.m in Sources */,
+				97C55B8D1BC6068F00A0111C /* README.md in Sources */,
+				97C55B901BC6068F00A0111C /* SVProgressHUD.m in Sources */,
+				97A44D211BBBDE4500303752 /* main.m in Sources */,
+				97D79ABD1BCDEE6D0099EC06 /* CellUseOfChooseViewController.m in Sources */,
+				97C55BA61BC610CE00A0111C /* MMMaterialDesignSpinner.m in Sources */,
+				97D79AC41BCDEE6D0099EC06 /* SICBaseViewController.m in Sources */,
+				9726A85F1CB60DCC00BF7127 /* PushListViewController.m in Sources */,
+				97C55B8E1BC6068F00A0111C /* SVIndefiniteAnimatedView.m in Sources */,
+				97D79AC31BCDEE6D0099EC06 /* ScanSKYBeaconViewController.m in Sources */,
+				97D79AC11BCDEE6D0099EC06 /* IntervalChooseViewController.m in Sources */,
+				97D79ACA1BCDEE6D0099EC06 /* UpdateFrequencyViewController.m in Sources */,
+				97D79ABE1BCDEE6D0099EC06 /* CellUseOfViewController.m in Sources */,
+				97D79AC91BCDEE6D0099EC06 /* TxPowerChooseViewController.m in Sources */,
+				97D79AC71BCDEE6D0099EC06 /* TemperatureUpdateFrequencyChooseViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		97A44D301BBBDE4500303752 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				97A44D3B1BBBDE4500303752 /* SDKDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97A44D361BBBDE4500303752 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 97A44D1A1BBBDE4500303752 /* SDKDemo */;
+			targetProxy = 97A44D351BBBDE4500303752 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		97A44D281BBBDE4500303752 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97A44D291BBBDE4500303752 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		97A44D2D1BBBDE4500303752 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				97A44D2E1BBBDE4500303752 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		97A44D3C1BBBDE4500303752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		97A44D3D1BBBDE4500303752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		97A44D3F1BBBDE4500303752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SDKDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = SDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		97A44D401BBBDE4500303752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				GCC_PREFIX_HEADER = "$(SRCROOT)/SDKDemo/PrefixHeader.pch";
+				INFOPLIST_FILE = SDKDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		97A44D421BBBDE4500303752 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDKDemo.app/SDKDemo";
+			};
+			name = Debug;
+		};
+		97A44D431BBBDE4500303752 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SDKDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDKDemo.app/SDKDemo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		97A44D161BBBDE4500303752 /* Build configuration list for PBXProject "SDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A44D3C1BBBDE4500303752 /* Debug */,
+				97A44D3D1BBBDE4500303752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A44D3E1BBBDE4500303752 /* Build configuration list for PBXNativeTarget "SDKDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A44D3F1BBBDE4500303752 /* Debug */,
+				97A44D401BBBDE4500303752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		97A44D411BBBDE4500303752 /* Build configuration list for PBXNativeTarget "SDKDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97A44D421BBBDE4500303752 /* Debug */,
+				97A44D431BBBDE4500303752 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 97A44D131BBBDE4500303752 /* Project object */;
+}

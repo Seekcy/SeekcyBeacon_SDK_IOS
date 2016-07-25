@@ -1,0 +1,32 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "F21421A5CA59A9E469882E750A6CABB30348318A",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "70e2d47d-7de2-4b4a-862d-f70941564fb4++3529" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "F21421A5CA59A9E469882E750A6CABB30348318A" : 0,
+    "70e2d47d-7de2-4b4a-862d-f70941564fb4++3529" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "C34D7AC4-B7B7-4459-AEEA-DCC88175804C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "F21421A5CA59A9E469882E750A6CABB30348318A" : "SeekcyBeacon_SDK_IOS",
+    "70e2d47d-7de2-4b4a-862d-f70941564fb4++3529" : "..\/work_zhangbin\/svn_documents\/Cornerstone_new\/SDKs"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SDKDemo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "iOS_SDK_Demo\/SDKDemo\/SDKDemo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/server.seekcy.com\/apps",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "70e2d47d-7de2-4b4a-862d-f70941564fb4++3529"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/Seekcy\/SeekcyBeacon_SDK_IOS.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "F21421A5CA59A9E469882E750A6CABB30348318A"
+    }
+  ]
+}
